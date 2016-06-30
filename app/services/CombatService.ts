@@ -6,11 +6,8 @@ export class Combatant {
         public dexMod: number = 0,
         public hitPoints: number = 1,
         public advantage: boolean = false
-    ){
-        
-    }
+    ){}
 }
-
 
 @Injectable()
 export class CombatService{
