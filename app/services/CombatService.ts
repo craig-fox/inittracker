@@ -39,30 +39,47 @@ export class CombatService{
 
 var combatants = [
     {
-        "name" : 'Jez Thunder',
-        "dexMod": 1,
+        "name" : 'Jon Snow',
+        "dexMod": 3,
         "hitPoints": 35,
         "advantage": false
     },
     {
-        "name" : 'Hench',
+        "name" : 'Orc Chieftain',
         "dexMod": 1,
         "hitPoints": 45
     },
     {
-        "name" : 'Orc Savage',
+        "name" : 'Eowyn',
         "dexMod": 2,
         "hitPoints": 25,
         "advantage": true
     },
     {
-        "name" : 'Bugbear Chief',
-        "dexMod": 3,
-        "hitPoints": 38
+        "name" : 'Brienne',
+        "dexMod": 2,
+        "hitPoints": 25,
+        "advantage": true
     },
     {
-        "name" : 'Fat Ogre',
+        "name" : 'Orc Grunt 1',
+        "dexMod": 1,
+        "hitPoints": 12
+    },
+    {
+        "name" : 'Orc Grunt 2',
         "dexMod": -1,
         "hitPoints": 65
-    }
+    },
+    {
+        "name" : 'Dire Wolf',
+        "dexMod": 2,
+        "hitPoints": 45,
+        "advantage": true
+    },
+    {
+        "name" : 'Hodor',
+        "dexMod": -2,
+        "hitPoints": 50
+    },
 ]
