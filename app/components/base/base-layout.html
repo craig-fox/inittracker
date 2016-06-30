@@ -1,0 +1,23 @@
+<tracker-navbar></tracker-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <combat-options></combat-options>
+        </div>
+        <div class="col-md-9">
+            <div class="row carousel-holder">
+                <div class="col-md-12">
+                    <combat-carousel></combat-carousel>
+                </div>
+            </div>
+            <div class="row">
+                <div *ngFor="#combatant of combatants" class="col-sm-6 col-lg-6 col-md-6">
+                    <tracker-combatant [combatant]="combatant"></tracker-combatant>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<tracker-footer></tracker-footer>

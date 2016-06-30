@@ -1,32 +1,17 @@
-import {Component} from 'angular2/core';
-import NavbarComponent from '../components/navbar/navbar';
-import FooterComponent from "../components/footer/footer";
-import CarouselComponent from "../components/carousel/carousel";
-import CombatantComponent from "../components/combatant/combatant";
-//import {TrackerComponent} from '../tracker/tracker';
-//import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
-//import {CurrentNoticeComponent} from '../participant/current-notice'
-import CombatOptionsComponent from '../components/combat-options/combat-options'
-import {Combatant, CombatService} from '../services/CombatService'
+import {Component} from 'angular2/core'
+import {BaseLayoutComponent} from '../components/base/base-layout'
+import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router'
 
 @Component({
     selector: 'app-root',
     templateUrl: 'app/root/app-root.html',
-    styleUrls: ['app/root/application.css'],
-    directives: [NavbarComponent, FooterComponent, CarouselComponent, CombatOptionsComponent, CombatantComponent],
-    providers: [CombatService]
+    directives: [ROUTER_DIRECTIVES, BaseLayoutComponent]
 })
 
-/*@RouteConfig(
+@RouteConfig(
     [
-        {path: '/', component:TrackerComponent, as: 'Tracker'}
+        {path: '/', component:BaseLayoutComponent, as: 'Base'}
     ]
-) */
+) 
 
-export default class RootComponent {
-    combatants: Array<Combatant> = [];
-
-    constructor(private combatService: CombatService){
-        this.combatants = this.combatService.getCombatants();
-    }
-}
+export default class RootComponent {}

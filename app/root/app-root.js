@@ -43,7 +43,7 @@ System.register(['angular2/core', '../components/navbar/navbar', "../components/
                     core_1.Component({
                         selector: 'app-root',
                         templateUrl: 'app/root/app-root.html',
-                        styleUrls: ['app/root/application.css'],
+                        styleUrls: ['../components/base/application.css'],
                         directives: [navbar_1.default, footer_1.default, carousel_1.default, combat_options_1.default, combatant_1.default],
                         providers: [CombatService_1.CombatService]
                     })
